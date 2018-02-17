@@ -1,0 +1,67 @@
+﻿@model MVCDemoApp.Models.Test
+
+@{
+
+    ViewData["Title"] = "Details";
+
+}
+
+<h2>Details</h2>
+
+<div>
+
+   
+
+    <hr />
+
+    <dl class="dl-horizontal">
+
+        <dt>
+
+            @Html.DisplayNameFor(model => model.UserName)
+
+        </dt>
+
+        <dd>
+
+            @Html.DisplayFor(model => model.UserName)
+
+        </dd>
+
+        <dt>
+
+            @Html.DisplayNameFor(model => model.EmailId)
+
+        </dt>
+
+        <dd>
+
+            @Html.DisplayFor(model => model.EmailId)
+
+        </dd>
+
+        <dt>
+
+            @Html.DisplayNameFor(model => model.CompanyName)
+
+        </dt>
+
+        <dd>
+
+            @Html.DisplayFor(model => model.CompanyName)
+
+        </dd>
+
+        
+
+    </dl>
+
+</div>
+
+<div>
+
+    <a asp-action="Edit" asp-route-id="@Model.AccountId">Edit</a> |
+
+    <a asp-action="Index">Back to List</a>
+
+</div>
